@@ -174,13 +174,13 @@ object ActivatorCli extends ActivatorCliHelper {
   private def printUsage(name: String, dir: File): Unit = {
     // TODO - Cross-platform-ize these strings! Possibly keep script name in SnapProperties.
     System.out.println(s"""|To run "$name" from the command line, "cd $name" then:
-                           |${dir.getAbsolutePath}/${SCRIPT_NAME} run
+                           |${dir.getAbsolutePath}/bin/${SCRIPT_NAME} run
                            |
                            |To run the test for "$name" from the command line, "cd $name" then:
-                           |${dir.getAbsolutePath}/${SCRIPT_NAME} test
+                           |${dir.getAbsolutePath}/bin/${SCRIPT_NAME} test
                            |
                            |To run the Activator UI for "$name" from the command line, "cd $name" then:
-                           |${dir.getAbsolutePath}/${SCRIPT_NAME} ui
+                           |${dir.getAbsolutePath}/bin/${SCRIPT_NAME} ui
                            |""".stripMargin)
   }
 
